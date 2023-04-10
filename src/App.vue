@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import MainComponent from './components/MainComponent.vue'
 </script>
 
 <template>
-  <RouterView />
+  <div class="flex flex-col bg-blue-600 min-h-screen w-screen">
+    <MainComponent />
+    <RouterView />
+  </div>
 </template>
