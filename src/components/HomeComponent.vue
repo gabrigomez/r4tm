@@ -1,6 +1,11 @@
 <template>
   <div>
     <div class="flex flex-col items-center">
+      <img
+        class="h-24 w-24 rounded-full mb-4" 
+        src="https://i.etsystatic.com/28177244/r/il/99634b/3125970924/il_570xN.3125970924_l1vu.jpg" 
+        alt=""
+      />
       <p class="text-3xl font-medium text-red-500">
         Rage Against The Machine everyday
       </p>
@@ -22,8 +27,8 @@ const song = ref("");
 
 const getSong = async() => {
   const result = await axios.get('https://rage-api.onrender.com/songs');
-  song.value = result.data;  
-  console.log(result.data);
+  song.value = result;  
+  console.log(result);
 }
 
 </script>
