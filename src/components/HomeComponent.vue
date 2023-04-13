@@ -16,7 +16,7 @@
         Song for today
       </button>      
     </div>
-    <div 
+    <!-- <div 
       v-if="song"
       class="flex flex-col w-2/4 justify-center border border-red-500 border-opacity-30 items-center mt-4 p-2 gap-1"
     >
@@ -34,11 +34,13 @@
       <a :href="song.link" target="blank" class="hover:text-red-500 duration-300">
         Link
       </a>      
-    </div>
+    </div> -->
+    <MusicComponent :song="song" />
   </div>
 </template>
 
 <script setup>
+import MusicComponent from '../components/MusicComponent.vue'
 import { ref } from 'vue';
 import axios from 'axios';
 
