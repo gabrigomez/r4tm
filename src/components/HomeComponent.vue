@@ -6,7 +6,7 @@
         src="https://i.etsystatic.com/28177244/r/il/99634b/3125970924/il_570xN.3125970924_l1vu.jpg" 
         alt=""
       />
-      <p class="text-3xl font-medium text-red-500">
+      <p class="text-3xl font-medium text-slate-200">
         Rage Against The Machine everyday
       </p>
       <button 
