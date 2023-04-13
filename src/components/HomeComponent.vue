@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center justify-center">
     <div class="flex flex-col items-center">
       <img
         class="h-24 w-24 rounded-full mb-4" 
@@ -16,26 +16,10 @@
         Song for today
       </button>      
     </div>
-    <!-- <div 
-      v-if="song"
-      class="flex flex-col w-2/4 justify-center border border-red-500 border-opacity-30 items-center mt-4 p-2 gap-1"
-    >
-      <img
-        class="h-36 w-36 border border-red-200" 
-        :src="song.cover" 
-        alt=""
-      >
-      <p class="text-2xl font-bold">
-        {{ song.name }}
-      </p>
-      <p class="text-sm">
-        {{ song.album }}
-      </p>
-      <a :href="song.link" target="blank" class="hover:text-red-500 duration-300">
-        Link
-      </a>      
-    </div> -->
-    <MusicComponent :song="song" />
+    <div class="flex justify-center w-full">
+      <i class="fa-solid fa-spinner animate-spin text-5xl text-red-500 mt-6" v-if="loading"></i>    
+      <MusicComponent :song="song" />
+    </div>    
   </div>
 </template>
 
@@ -45,11 +29,14 @@ import { ref } from 'vue';
 import axios from 'axios';
 
 const song = ref(null);
+const loading = ref(false);
 
 const getSong = async() => {
+  loading.value = true;
   const result = await axios.get('https://rage-api.onrender.com/songs');
   song.value = result.data[0]; 
-  console.log(song.value) 
+  console.log(song.value);
+  loading.value = false; 
 }
 
 </script>
