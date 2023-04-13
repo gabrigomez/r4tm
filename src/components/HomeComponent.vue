@@ -16,6 +16,25 @@
         Song for today
       </button>      
     </div>
+    <div 
+      v-if="song"
+      class="flex flex-col justify-center items-center"
+    >
+      <p>
+        {{ song.name }}
+      </p>
+      <p>
+        {{ song.album }}
+      </p>
+      <p>
+        {{ song.link }}
+      </p>
+      <img
+        class="h-16 w-16 border border-red-500" 
+        :src="song.cover" 
+        alt=""
+      >
+    </div>
   </div>
 </template>
 
@@ -23,12 +42,12 @@
 import { ref } from 'vue';
 import axios from 'axios';
 
-const song = ref("");
+const song = ref(null);
 
 const getSong = async() => {
   const result = await axios.get('https://rage-api.onrender.com/songs');
-  song.value = result;  
-  console.log(result);
+  song.value = result.data[0]; 
+  console.log(song.value) 
 }
 
 </script>
