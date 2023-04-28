@@ -17,7 +17,9 @@
       </button>      
     </div>
     <div class="flex justify-center w-full">
-      <i class="fa-solid fa-spinner animate-spin text-5xl text-red-500 mt-6" v-if="loading"></i>    
+      <div>
+        <i class="fa-solid fa-spinner animate-spin text-5xl text-red-500 mt-6" v-if="loading && !song"></i>    
+      </div>
       <MusicComponent :song="song" />
     </div>    
   </div>
