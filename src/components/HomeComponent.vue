@@ -2,8 +2,8 @@
   <div class="flex flex-col items-center justify-center">
     <div class="flex flex-col items-center">
       <img
-        class="h-24 w-24 rounded-full mb-4" 
-        src="https://i.etsystatic.com/28177244/r/il/99634b/3125970924/il_570xN.3125970924_l1vu.jpg" 
+        class="h-36 w-36 mb-4" 
+        src="../assets/red_start.png" 
         alt=""
       />
       <p class="text-3xl font-medium text-slate-200">
