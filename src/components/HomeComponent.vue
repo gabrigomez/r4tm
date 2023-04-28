@@ -6,7 +6,7 @@
         src="../assets/red_start.png" 
         alt=""
       />
-      <p class="text-3xl font-medium text-slate-200">
+      <p class="text-3xl mt-1 font-medium text-slate-200">
         RAGE FOR TODAY
       </p>
       <button 
