@@ -1,7 +1,7 @@
 <template>  
   <div 
     v-if="song"
-    class="flex flex-col w-2/4 justify-center border border-red-500 border-opacity-30 items-center text-white mt-4 p-2 gap-1"
+    class="flex flex-col w-1/4 justify-center border border-red-500 border-opacity-30 items-center text-white mt-4 p-2 gap-1"
   >
     <img
       class="h-36 w-36 border border-red-200" 
