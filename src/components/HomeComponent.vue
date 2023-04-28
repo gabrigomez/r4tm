@@ -35,7 +35,6 @@ const getSong = async() => {
   loading.value = true;
   const result = await axios.get('https://rage-api.onrender.com/songs');
   song.value = result.data[0]; 
-  console.log(song.value);
   loading.value = false; 
 }
 
