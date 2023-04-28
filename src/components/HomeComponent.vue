@@ -1,19 +1,19 @@
 <template>
   <div class="flex flex-col font-rage items-center justify-center">
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col w-full items-center">
       <img
         class="h-36 w-36 mb-4" 
         src="../assets/red_start.png" 
         alt=""
       />
       <p class="text-3xl font-medium text-slate-200">
-        Rage Against The Machine everyday
+        RAGE FOR TODAY
       </p>
       <button 
-        class="bg-white rounded-full mt-6 w-1/4 hover:bg-red-200 duration-300"
+        class="bg-white rounded-full mt-6 w-42 p-2 hover:bg-red-200 duration-300"
         @click="getSong"
       >
-        Song for today
+        Today's bombtrack
       </button>      
     </div>
     <div class="flex justify-center w-full">

@@ -3,7 +3,7 @@ import HomeComponent from '../components/HomeComponent.vue'
 </script>
 
 <template>
-  <main>
+  <main class="w-full">
     <HomeComponent />
   </main>
 </template>
