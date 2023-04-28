@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center">
+  <div class="flex flex-col font-rage items-center justify-center">
     <div class="flex flex-col items-center">
       <img
         class="h-36 w-36 mb-4" 

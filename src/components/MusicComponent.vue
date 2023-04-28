@@ -15,7 +15,7 @@
       {{ song.album }}
     </p>
     <a :href="song.link" target="blank" class="hover:text-red-500 duration-300">
-      Link
+      link
     </a>      
   </div>
 </template>
